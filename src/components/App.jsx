@@ -1,14 +1,17 @@
 import { Route,Routes } from "react-router-dom";
-import Home from "./Home/Home";
+import SharedLayout from "./SharedLayout/SharedLayout";
 import Cast from "./Cast/Cast";
 import MoviesDetails from "./MovieDetails/MovieDetails";
 import Movies from "./Movies/Movies";
 import Reviews from "./Reviews/Reviews";
+import Home from "./Home/Home";
 export const App = () => {
   return (
     <div>
     <Routes>
-      <Route path="/" element={<Home />}>
+      
+      <Route path="/" element={<SharedLayout />}>
+      <Route path="/" element={<Home />} />
       <Route path="/movies" element={<Movies />} />
       <Route path="/movies/:movieId" element={<MoviesDetails />} />
       <Route path="/movies/:movieId/cast" element={<Cast />} />

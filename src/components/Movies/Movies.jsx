@@ -2,7 +2,10 @@ import React from 'react';
 
 const Movies = () => {
   return (
-    <div>
+    <div style={{
+      display:"block",
+     
+    }}>
       <h2>Movies</h2>
       <ul>
         <li> 1</li>
