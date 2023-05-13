@@ -7,10 +7,11 @@ const Home = () => {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://api.themoviedb.org/3/movie/550?api_key=ce046fb7a0718a1aac652aa1ca1238c4"
-        );
+          "https://api.themoviedb.org/3/trending/movie/week?api_key=ce046fb7a0718a1aac652aa1ca1238c4"
+          );
         const data = await response.json();
-        setData(data);
+        setData(data.results);
+        console.log(data);
       } catch (error) {
         console.log(error);
       }
@@ -23,10 +24,11 @@ const Home = () => {
     <div>
       <h1>Home</h1>
       {data && (
-        <div>
-          <h2>{data.title}</h2>
-          <p>{data.overview}</p>
-        </div>
+        <ul>
+          {data.map((e) => (
+            <li key={e.id}>{e.title}</li>
+          ))}
+        </ul>
       )}
     </div>
   );
