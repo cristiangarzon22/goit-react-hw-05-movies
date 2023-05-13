@@ -2,7 +2,7 @@ import React from 'react';
 
 const Reviews = () => {
   return (
-      <h2>mierdsa</h2>
+      <h2>Reviews</h2>
   );
 }
 
