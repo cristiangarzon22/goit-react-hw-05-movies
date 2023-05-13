@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [data, setData] = useState(null);
@@ -24,12 +25,15 @@ const Home = () => {
     <div>
       <h1>Home</h1>
       {data && (
-        <ul>
-          {data.map((e) => (
-            <li key={e.id}>{e.title}</li>
-          ))}
-        </ul>
-      )}
+  <ul>
+    {data.map((e) => (
+      <li key={e.id}>
+        <Link to={`/movies/${e.id}`}>{e.title}</Link>
+      </li>
+    ))}
+  </ul>
+)}
+
     </div>
   );
 };
