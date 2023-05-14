@@ -8,8 +8,8 @@ const SharedLayout = () => {
     <div className={css.div}>
       <nav className={css.nav}>
 
- <Link to="/" className={css.box}>Home</Link>
-  <Link to="/movies" className={css.box}>movies</Link>
+  <button className={css.box1}><Link to="/" className={css.btn}>Home</Link></button>
+  <button className={css.box2}><Link to="/movies" className={css.btn}>Movies</Link></button>
  
       </nav>
       

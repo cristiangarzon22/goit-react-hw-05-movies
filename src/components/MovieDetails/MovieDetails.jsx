@@ -55,11 +55,12 @@ const MovieDetails = () => {
       </div>
     </div>
     <div>
+      <h2>Aditional information</h2>
     <Link to="cast" state={{ from: cameBack }}>
   <button>Cast</button>
 </Link>
 
-<Link to="reviews" state={{ from: cameBack }}>
+<Link to={"reviews"} state={{ from: cameBack }}>
   <button>Reviews</button>
 </Link>
     </div>
