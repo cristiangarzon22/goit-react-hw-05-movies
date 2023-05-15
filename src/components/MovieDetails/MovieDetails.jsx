@@ -10,7 +10,6 @@ const MovieDetails = () => {
   const [movie, setMovie] = useState(null);
   const location = useLocation();
   const cameBack = location.state?.from ?? '/';
- 
 
   useEffect(() => {
     async function fetchMovieData() {
@@ -60,15 +59,14 @@ const MovieDetails = () => {
       <div>
         <h2>Aditional information</h2>
         <Link to={'cast'} state={{ from: cameBack }}>
-        <button className={`${css.btn} ${css.b1}`}>Cast</button>
+          <button className={`${css.btn} ${css.b1}`}>Cast</button>
         </Link>
 
         <Link to={'reviews'} state={{ from: cameBack }}>
           <button className={`${css.btn} ${css.b1}`}>Reviews</button>
         </Link>
       </div>
-      <Outlet/>
-
+      <Outlet />
     </>
   );
 };

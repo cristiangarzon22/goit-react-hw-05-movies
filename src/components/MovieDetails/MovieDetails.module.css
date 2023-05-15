@@ -12,17 +12,17 @@
   width: 100px;
   height: 50px;
 }
-.text{
+.text {
   text-align: justify;
   width: 80%;
 }
 
-.b1{
+.b1 {
   margin-left: 10px;
 }
-.activeBtn{
+.activeBtn {
   background-color: yellowgreen;
 }
-.active{
+.active {
   background-color: violet;
 }

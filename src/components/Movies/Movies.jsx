@@ -24,9 +24,8 @@ const Movies = () => {
     } catch (error) {
       console.log(error);
     }
-  
   };
-  
+
   return (
     <>
       <h2>Search Movies</h2>
