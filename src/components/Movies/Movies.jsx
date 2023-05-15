@@ -20,18 +20,19 @@ const Movies = () => {
         `https://api.themoviedb.org/3/search/movie?api_key=ce046fb7a0718a1aac652aa1ca1238c4&language=en-US&query=${movie}&page=1&include_adult=false`
       );
       const response = await url.json();
-      console.log(response);
       setresponse(response);
     } catch (error) {
       console.log(error);
     }
+  
   };
+  
   return (
     <>
       <h2>Search Movies</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="type movie" onChange={handleChange} />
-        <button type="submit">buscar</button>
+        <button type="submit">Search</button>
       </form>
       {responsive && (
         <ul>

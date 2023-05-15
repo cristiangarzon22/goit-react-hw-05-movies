@@ -12,3 +12,17 @@
   width: 100px;
   height: 50px;
 }
+.text{
+  text-align: justify;
+  width: 80%;
+}
+
+.b1{
+  margin-left: 10px;
+}
+.activeBtn{
+  background-color: yellowgreen;
+}
+.active{
+  background-color: violet;
+}

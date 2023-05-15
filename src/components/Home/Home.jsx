@@ -20,7 +20,9 @@ const Home = () => {
 
     fetchData();
   }, []);
-
+  if (!data) {
+    return <div>Loading...</div>;
+  }
   return (
     <div>
       <h1>Trending Movies</h1>
